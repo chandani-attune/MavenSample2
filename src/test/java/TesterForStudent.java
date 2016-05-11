@@ -13,6 +13,9 @@ public class TesterForStudent
 	{
 		int res=obj.countAvg(10, 20, 30);
 		Assert.assertEquals(res, 20);
+		
+		res=obj.countAvg(20, 20, 20);
+		Assert.assertEquals(res, 20);
 	}
 
 	@Test
