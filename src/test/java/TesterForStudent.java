@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,19 +9,12 @@ public class TesterForStudent
 	
 	Student obj=new Student();
 	@Test
-	public void testCountAvg() 
+	public void mytest()
 	{
-		int res=obj.countAvg(10, 20, 30);
-		Assert.assertEquals(res, 20);
 		
-		res=obj.countAvg(20, 20, 20);
-		Assert.assertEquals(res, 20);
+		Assert.assertEquals(20, obj.countAvg(10, 10, 10));
+		
 	}
-
-	@Test
-	public void testGetGrades() {
-		String res=obj.getGrades(95);
-		Assert.assertEquals("A", res);
-	}
+	
 
 }
